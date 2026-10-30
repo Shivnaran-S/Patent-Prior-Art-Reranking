@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+artifacts/
+results/
+.streamlit/secrets.toml
+*.preview.pdf
+.venv/

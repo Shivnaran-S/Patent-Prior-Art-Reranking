@@ -1,0 +1,23 @@
+{
+  "source": "PatentMatch (EPO examiner search reports), public HuggingFace mirrors",
+  "source_repos": [
+    "Reynold97/patentmatch_exp",
+    "bhlim/patentmatch_for_finetuning",
+    "bhlim/patentmatch_train_ultrabalanced_150"
+  ],
+  "n_documents": 11849,
+  "n_queries": 14297,
+  "n_qrels": 14650,
+  "n_hard_negatives": 246,
+  "queries_per_split": {
+    "test": 2861,
+    "dev": 1431,
+    "train": 10005
+  },
+  "mean_relevant_per_query": 1.02,
+  "mean_query_words": 63.8,
+  "mean_doc_words": 104.8,
+  "queries_with_epo_metadata": 146,
+  "split_method": "connected-component group split on the query-document graph",
+  "seed": 42
+}

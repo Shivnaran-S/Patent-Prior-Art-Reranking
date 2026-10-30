@@ -1,0 +1,22 @@
+[theme]
+base = "light"
+primaryColor = "#4338CA"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F5F6FA"
+textColor = "#141A2E"
+font = "sans serif"
+
+[server]
+headless = true
+maxUploadSize = 50
+
+# Streamlit's auto-reload watcher walks every imported module to decide what to
+# watch. Walking `transformers` triggers its lazy image-processing imports,
+# which need torchvision -- not installed, and not needed by this project. The
+# result is thousands of harmless ModuleNotFoundError tracebacks in the console,
+# which look alarming during a demo. Turning the watcher off removes all of it.
+# Cost: edits to .py files need a manual restart rather than auto-reloading.
+fileWatcherType = "none"
+
+[browser]
+gatherUsageStats = false
